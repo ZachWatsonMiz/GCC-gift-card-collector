@@ -11,4 +11,5 @@ ORDER BY balanceUpdate DESC
 SELECT Transaction.balanceDelta, Transactions.date 
 FROM Transactions, Certificards
 WHERE Certificards.id = Transactions.cardId && CertifiCards.location = $cardLocation
+ORDER BY Transactions.date DESC
 ?>
